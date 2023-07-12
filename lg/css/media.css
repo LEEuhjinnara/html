@@ -1,0 +1,142 @@
+
+@media screen and (max-width:640px) {
+
+    html, body {
+        min-width: 350px;
+        font-size: 13px;
+    }
+    .wrap {
+        width: auto;
+        margin: 0 20px;
+    }
+    
+
+    header {
+        height: 50px;
+    }
+    header h1 a {
+        width: 40px;
+        height: 20px;
+    }
+    header .gnb button {
+        display: block;
+    }
+    header .gnb button span {
+        display: none;
+    }
+    header .gnb ul {
+        display: none;
+    }
+    header .tnb {
+        display: none;
+    }
+    header .gnb button i {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    header.fixed .gnb button i {
+        color: #1d1d1d;
+    }
+    .visual {
+        height: 450px;
+    }
+    .visual h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .visual h2 span {
+        display: inline;
+    }
+    .visual p {
+        display: none;
+    }
+    .biz .group1 {
+        margin: 60px 0 30px 0;
+    }
+    .biz .group2 {
+        margin-bottom: 30px;
+    }
+    .biz .fleft img {
+        float: none;
+        width: 100%;
+    }
+    .biz .inner {
+        width: auto;
+    }
+    .biz .fleft .inner {
+        float: none;
+        margin: 0;
+    }
+    .biz .fright img {
+        float: none;
+        width: 100%;
+    }
+    .biz .fright .inner {
+        float: none;
+        margin: 0;
+    }
+    .biz h2 {
+        margin: 15px 0 8px 0;
+        font-size: 35px;
+    }
+    .purpose {
+        margin: 70px 0 60px 0;
+        height: auto;
+        padding: 0 0 40px 0;
+    }
+    .purpose h2 {
+        padding: 60px 50px;
+        font-size: 25px;
+    }
+    .purpose h2 strong::before {
+        left: -30px;
+        top: -50px;
+    }
+    .purpose h2 strong::after {
+        right: -50px;
+        bottom: -40px;
+    }
+    .purpose h2 strong::before,
+    .purpose h2 strong::after {
+        background-size: 35px auto;
+    }
+    .news ul {
+        display: block;
+        gap: 0;
+    }
+    .news ul li {
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+    .news ul li img {
+        width: 100%;
+    }
+    .news ul li a .cate {
+        margin: 15px 15px 5px 15px;
+    }
+    .news ul li a .tit {
+        margin: 0 15px;
+    }
+    .news ul li a .date {
+        margin: 15px 15px 10px 15px;
+        padding: 0 0 20px 0;
+    }
+    footer {
+        padding: 20px 0 50px 0;
+    }
+    footer .family {
+        float: none;
+    }
+    footer .family button {
+        width: 160px;
+        height: 30px;
+    }
+    footer .inner {
+        float: none;
+    }
+    footer .inner .fnav {
+        margin-top: 30px;
+    }
+   
+}
