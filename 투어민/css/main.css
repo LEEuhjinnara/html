@@ -1,0 +1,324 @@
+@import url('default.css');
+@import url('common.css');
+
+.visual {
+    position: relative;
+}
+.visual .txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-640px, -50%);
+    width: 1000px;
+    color: #fff;
+}
+
+.visual .txt p {
+    font-size: 20px;
+}
+
+
+.visual .txt h2 {
+    padding: 0 0 35px 0;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+}
+.visual .txt strong {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.4;
+    font-size: 100px;
+}
+
+.visual .txt a {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.4);
+    margin-left: 10px;
+    transition: all 0.3s;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.visual .txt a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+.visual .popup {
+    height: 100%;
+}
+.visual .popup .swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.visual .popup .pop01 {
+    background-image: url(../images/bg1.jpg);
+}
+.visual .popup .pop02 {
+    background-image: url(../images/bg2.jpg);
+}
+.visual .popup .pop03 {
+    background-image: url(../images/bg3.jpg);
+}
+.visual .popup .swiper-paginnation-bullet {
+    width: 15%;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+}
+.visual .popup .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.biz .tit {
+    margin: 71px 0 29px 0;
+}
+.biz .tit h2 {
+    float: left;
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700;
+}
+.biz .tit a {
+    float: right;
+    display: block;
+    margin: 36px 0 0 0;
+}
+.biz.tit a span {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.biz .tit a i {
+    float: left;
+    font-size: 20px;
+}
+.biz .list ul {
+    display: flex;
+}
+.biz .list ul li {
+    width: 25%;
+}
+.biz .list ul li a {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 750px;
+    padding: 0 0 89px 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.biz .list ul li a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    content: "";
+}
+.biz .list ul li.one a {
+    background-image: url(../images/그네.jpg);
+}
+.biz .list ul li.two a {
+    background-image: url(../images/몰디.jpg);
+}
+.biz .list ul li.three a {
+    background-image: url(../images/몰디2.jpg);
+}
+.biz .list ul li.four a {
+    background-image: url(../images/몰디3.jpg);
+}
+.biz .list ul li a strong {
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 16px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.biz .list ul li a span {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.biz .list ul li,
+.biz .list ul li a,
+.biz .list ul li a strong,
+.biz .list ul li a span,
+.biz .list ul li a::before {
+    transition: 0.7s;
+}
+.biz .list ul.over li.active {
+    width: 50%;
+}
+.biz .list ul.over li.active a strong {
+    font-size: 60px;
+}
+.biz .list ul.over li.active a span {
+    font-size: 20px;
+}
+.biz .list ul.over li:not(.active) a {
+    color: rgba(255,255,255,0.6);
+}
+.biz .list ul.over li:not(.active) a::before {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.news .inner {
+    position: relative;
+}
+.news h2 {
+    margin: 70px 0 58px 0;
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700;
+}
+.news ul {
+    display: flex;
+    justify-content: space-between;
+}
+.news ul li {
+    position: relative;
+    width: 420px;
+}
+.news ul li::after {
+    position: absolute;
+    right: -30px;
+    top: 7px;
+    width: 1px;
+    height: 171px;
+    background-color: #ededed;
+    content: "";
+}
+.news ul li:last-child::after {
+    display: none;
+}
+.news ul li a {
+    display: flex;
+    flex-direction: column;
+}
+.news ul li a .subject {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+}
+.news ul li a .cnt {
+    margin: 27px 0 24px 0;
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+}
+.news ul li a .date {
+    color: #666;
+}
+.news .more {
+    position: absolute;
+    right: 0;
+    top: 37px;
+}
+.news .more a {
+    display: flex;
+}
+.news .more a span {
+    margin: 0 10px 0 0;
+}
+.news .more a i {
+    font-size: 20px;
+}
+
+.link {
+    height: 402px;
+    margin: 100px 0 0 0;
+    background: url(../images/link.jpg) no-repeat center center / cover;
+}
+.link h2 {
+    padding: 86px 0 41px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.link h2 span {
+    display: block;
+}
+.link ul {
+    display: flex;
+    justify-content: space-between;
+}
+.link ul li {
+    width: 440px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.link ul li a {
+    display: flex;
+    align-items: center;
+    height: 95px;
+}
+.link ul li a i {
+    margin: 0 42px 0 43px;
+    color: #666;
+    font-size: 46px;
+}
+.link ul li a h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.link ul li a p {
+    color: #666666;
+}
+.link ul li:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+
+#popup-view {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 500px;
+    background-color: #fff;
+    border: 4px solid #ED1C24;
+    padding: 20px;
+    display: none;
+}
+
+ul.estable {margin:0px;padding:0px;width:100%;border-top:1px solid #dfdfdf;list-style:none;border-right:0px;font-size:0.8em}
+.estable li.head {width:15%;float:left;background:#fafafa;height:40px;padding:0px 10px;line-height:40px;}
+.estable li.headhei {width:15%;float:left;background:#fafafa;height:150px;padding:0px 10px;line-height:150px;}
+
+.estable li {width:35%;float:left;border-bottom:1px solid #dfdfdf;padding:0px 10px;height:40px;;box-sizing:border-box;border-right:1px solid #dfdfdf;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;line-height:38px;}
+.estable li.merge {width:85%;height:150px;padding:10px 10px}
+.estable li .input01 {border:1px solid #efefef;padding:5px;width:70%}
+.estable li .input02 {border:1px solid #efefef;padding:5px;width:30px;ime-mode:disable}
+.estable li .input03 {border:1px solid #efefef;padding:5px;width:20%}
+.estable li .input04 {border:1px solid #efefef;padding:5px;width:30%}
+.estable li .input05 {border:1px solid #efefef;padding:5px;width:calc(100% - 10px);height:100px;}
+.estable li .sel01 {border:1px solid #efefef;padding:0px;width:30%;vertical-align:middle;padding:1px 0px 7px;}
+.estable li .sel02 {border:1px solid #efefef;padding:0px;width:20%;vertical-align:middle;padding:1px 0px 7px;}
+.lline {border-left:1px solid #dfdfdf}
+.estable_title {text-align:center;font-size:1.38em;padding:30px 0px 20px;}
+
+
+
+
+
