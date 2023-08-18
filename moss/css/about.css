@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url(http://fonts.googleapis.com/css2?family=Noto+Sans+KR);
+@import url(http://fonts.googleapis.com/css2?family=Black+Han+Sans);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    overflow: hidden;
+    position: relative;
+    min-width: 1400px;
+}
+
+header {
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    top: -50px;
+}
+header h1 {
+    position: relative;
+    margin: 0 0 -20px 40px;
+
+}
+
+
+#gnb {
+    width: 220px;
+    position: absolute;
+    left: 40px;
+}
+#gnb > li {
+    position: relative;
+}
+#gnb > li > a {
+    display: block;
+    width: 220px;
+  
+    font: bold 18px/3 'play';
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+#gnb > li.on > a {
+    background: #c5c0b4;
+    color: #fff;
+    font-size: 20px;
+}
+#gnb > li:hover > a {
+    background: #403e2c;
+    color: #fff;
+}
+#gnb > li.on ul {
+    opacity: 0.8;
+    left: 230px;
+    top: 10px;
+}
+
+
+#gnb em {
+    display: inline-block;
+
+}
+#gnb em i {
+    margin-right: 20px;
+}
+
+#gnb ul {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    opacity: 0;
+    transition: 0.4s;
+}
+#gnb > li:hover ul {
+    opacity: 0.8;
+    left: 230px;
+}
+#gnb ul a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #ef8c24;
+    border-bottom: 3px solid #c5c0b4;
+    font: bold 16px/2.5 arial;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 30px;
+    margin-bottom: 3px;
+    transition: all 0.5s;
+}
+#gnb ul a:hover {
+    background-color: #ef8c24;
+    color: #596020;
+}
+
+#sns {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+#sns li {
+    float: left;
+    margin-right: 30px;
+}
+#sns .fa {
+    font-size: 25px;
+    color: #ef8c24;
+    opacity: 0.5;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+#sns .fa:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.one {
+    margin-top: 30px;
+}
+.one h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.one ul {
+    display: flex;
+    justify-content: center;
+    
+}
+.one ul li {
+    margin-right: 30px;
+    position: relative;
+}
+.one ul li::after {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    width: 1px;
+    height: 250px;
+    content: "";
+    background-color: #333;
+}
+.one ul li:last-child::after{
+    display: none;
+}
+.two {
+    margin: 50px 0 50px 0;
+}
+.two h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.two ul {
+    display: flex;
+    justify-content: center;
+    
+}
+.two ul li {
+    margin-right: 30px;
+    position: relative;
+}
+.two ul li::after {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    width: 1px;
+    height: 400px;
+    content: "";
+    background-color: #333;
+}
+.two ul li:last-child::after{
+    display: none;
+}
+#footer {
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+    background-color: #000;
+    padding: 20px 0 0 20px;
+    color: #ddd;
+}
+
+#footer .footer1-1 {
+    display: flex;
+    margin-top: 5px;
+}
+#footer .footer1-1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer1-1 ul li {
+    padding-left: 20px;
+}
+#footer .footer1-1 ul li a {
+    display: block;
+}
+#footer .footer1-1 ul li a:hover {
+    text-decoration: underline;
+}
+#footer .footer1-2 {
+    color: #ddd;
+    padding: 10px 0 0 20px;
+}
