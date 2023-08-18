@@ -1,0 +1,472 @@
+@import url('default.css');
+
+header {
+    position: absolute; /* visual 배경 이미지가 relative로 되어있어서 그 기준으로 떠있도록 */
+    left: 0; 
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #333;
+}
+header::after {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 312px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    content: "";
+}
+header h1 {
+    float: left;
+    margin: 20px 0 0 0;
+}
+header h1 a {
+    display: block;
+    width: 120px;
+    height: 100px;
+    background: url(../images/image\ 1.png) no-repeat left top / 100% auto;
+    font-size: 0;
+    line-height: 0; 
+}
+header .gnb {
+    position: relative;
+    z-index: 110;
+    float: right;
+    margin: -60px 0 0 0;
+}
+header .gnb button {
+    display: none;
+}
+header .gnb > ul > li { /* float는 li에서 */
+    float: left;
+    width: 240px;
+    text-align: center;
+    position: relative;
+}
+header .gnb > ul > li > a {
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 21px;
+}
+header .gnb > ul > li > a:hover { /* 마우스 올렸을때 - 폰트두께, 색상, 폰트패밀리 등등 */
+    font-weight: 700;
+    color: orange;
+}
+header .gnb > ul > li > ul {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    background-color: rgba(0,0,0,0.3);
+    width: 80%;
+    text-align: center;
+    display: none;
+}
+header .gnb > ul > li > ul > li a {
+    display: block;
+    font-size: 21px;
+    padding: 10px;
+}
+header .gnb > ul > li > ul > li a:hover {
+    background-color: orange;
+}
+header .gnbi {
+    margin: 20px 0 0 1300px;
+
+}
+header .gnbi ul {
+    display: flex;
+    margin: -30px 0 0 80px
+}
+header .gnbi ul li {
+    margin-right: 10px;
+}
+header .gnbi ul li a {
+    display: block;
+    font-size: 16px;
+}
+header .gnbi ul li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+header.fixed {
+    position: fixed;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    color: #1d1d1d;
+}
+header.fixed h1 a {
+    background-image: url(../images/logo.svg);
+}
+/* header 끝 */
+
+.visual {
+    position: relative;
+}
+.visual .txt {
+    position: absolute;
+    left: 50%;
+    top: 320px;
+    width: 450px;
+    z-index: 10;
+    transform: translate(-640px,0);
+    color: orange;
+   
+    padding: 20px;
+}
+.visual .txt h2 {
+    padding: 0 0 23px 0;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -5px;
+}
+.visual .txt p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+.visual .txt span {
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+}
+.visual .popup {
+    height: 1100px;
+}
+.visual .popup .swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual .popup .pop01 {
+    background-image: url(../images/bg.png);
+    top: 80px;
+   
+}
+
+
+.visual .popup .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+}
+.visual .popup .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+/* visual 끝 */
+
+.product {
+    margin: 50px 0 0 0;
+}
+.product .text {
+    float: right;
+    margin-top: 100px;
+}
+
+.product h3 {
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+.product h2 span {
+    display: block;
+}
+.product .icon ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.product .icon ul li {
+    padding-right: 10px;
+}
+.product .icon ul li img {
+    width: 70px;
+    height: 70px;
+}
+.product .icon .more {
+    display: inline-block;
+    margin-top: 80px;
+}
+.product .icon .more span {
+    margin: 20px;
+}
+
+.product .list ul li {
+    width: 400px;
+    height: 600px;
+    margin: 0 0 100px 0;
+}
+.product .list ul li:nth-child(1),
+.product .list ul li:nth-child(3) {
+    float: left;
+}
+.product .list ul li:nth-child(2),
+.product .list ul li:nth-child(4) {
+    float: right;
+}
+.product .list ul li:nth-child(1) {
+    background: url(../images/div.bg-img.png);
+}
+.product .list ul li:nth-child(1) strong {
+    margin: 500px 200px 0 0;
+}
+.product .list ul li:nth-child(2) {
+    background: url(../images/div.bg-img\ \(1\).png);
+    margin-right: 100px;
+}
+.product .list ul li:nth-child(2) {
+    margin-top: 100px;
+}
+.product .list ul li:nth-child(3) {
+    background: url(../images/div.bg-img\ \(2\).png);
+}
+.product .list ul li:nth-child(4) {
+    background: url(../images/div.bg-img\ \(3\).png);
+    margin-right: 400px;
+}
+.product .list ul li:nth-child(4) p {
+    margin-left: 20px;
+}
+.product .list ul li:nth-child(3) p {
+    margin-left: 30px;
+}
+.product .list ul li a {
+    display: block;
+    background-color: orange;
+    box-sizing: border-box;
+
+}
+.product .list ul li a p {
+    display: block;
+    margin: 450px 0 0 50px;
+    color: #fff;
+    font-size: 18px;
+}
+.product .list ul li a strong {
+    display: block;
+    margin-right: 200px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+
+}
+.product .list ul li a span {
+    display: block;
+    margin: 0 0 11px 0;
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+}
+.product .list ul li a i {
+    font-size: 35px;
+    color: #fff;
+    margin: -20px 0 0 50px;
+}
+/* product 끝 */
+
+.brand {
+    padding: 0 0 169px 0;
+    margin: 17px 0 0 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.brand h2 {
+    padding: 143px 0 90px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.brand h2 strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+.brand ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    margin: 0 40px 0 0;
+}
+.brand ul li:last-child {
+    margin-right: 0;
+}
+.brand ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 16px;
+    width: 1px;
+    height: 99px;
+    background-color: #ccc;
+    content: "";
+}
+.brand ul li:last-child::after {
+    display: none;
+}
+.brand ul li i {
+    font-size: 30px;
+    color: #666;
+}
+.brand ul li h3 {
+    padding: 16px 0 7px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+/* brand 끝 */ 
+
+.service h2 {
+    display: none;
+}
+.service ul li {
+    float: left;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+.service ul li.how {
+    background-image: url(../images/service01.png);
+}
+.service ul li.store {
+    background-image: url(../images/service02.png);
+}
+.service ul li.color {
+    background-image: url(../images/service03.png);
+}
+.service ul li a {
+    display: block;
+    height: 329px;
+    padding: 59px 0 0 50px;
+}
+.service ul li a span {
+    display: block;
+}
+.service ul li a strong {
+    display: block;
+    margin: 5px 0 18px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.service ul li a i {
+    font-size: 35px;
+}
+/* service 끝 */
+
+aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 10;
+}
+aside button {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 10px 0;
+    border-radius: 25px;
+    background-color: #1d1d1d;
+    color: #fff;
+    line-height: 0.3;
+    text-align: center;
+}
+aside button i {
+    font-size: 20px;
+}
+aside button span {
+    font-size: 13px;
+    font-weight: 700;
+}
+/* aside 끝 */
+
+footer {
+    padding: 0 0 100px 0;
+    background-color: #2d2d2d;
+    color: rgba(255,255,255,0.8);
+}
+footer .inner {
+    position: relative;
+}
+footer .sns {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+footer .sns ul {
+    float: right;
+    margin: 21px 0 0 0;
+}
+footer .sns ul li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+footer .sns ul li:last-child {
+    margin-right: 0;
+}
+footer .sns ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 19px auto;
+    font-size: 0;
+    line-height: 0;
+}
+footer .sns ul li.facebook a {
+    background-image: url(../images/sns_facebook.svg);
+}
+footer .sns ul li.naver a {
+    background-image: url(../images/sns_naver.svg);
+}
+footer .sns ul li.insta a {
+    background-image: url(../images/sns_insta.svg);
+}
+footer .sns ul li.youtube a {
+    background-image: url(../images/sns_youtube.svg);
+}
+footer .flogo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+footer .flogo img {
+    width: 85px;
+    opacity: 0.8;
+}
+footer .finfo {
+    margin: 25px 0;
+}
+footer .finfo span {
+    display: inline-block;
+}
+footer .finfo span.brd {
+    position: relative;
+    margin-right: 33px;
+}
+footer .finfo span.brd::after {
+    position: absolute;
+    right: -21px;
+    top: 5px;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(255,255,255,0.2);
+    content: "";
+}
+/* footer 끝 */

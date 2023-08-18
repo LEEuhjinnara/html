@@ -1,0 +1,335 @@
+@import url('default.css');
+@media screen and (max-width: 640px) {
+
+header {
+    height: 45px;
+}
+header h1 {
+    margin: 16px 0 0 0;
+}
+header h1 a {
+    width: 60px;
+    height: 15px;
+}
+header .gnb {
+    margin: 0;
+}
+header .gnb button {
+    display: block;
+    padding: 0 0 0 10px;
+    height: 45px;
+}
+header .gnb button span {
+    display: none;
+}
+header .gnb button i {
+    margin: 4px 0 0 0;
+    font-size: 18px;
+}
+header .gnb ul {
+    display: none;
+}
+/* header 끝 */
+
+.visual .txt {
+    position: absolute;
+    left: 20%;
+    top: 184px;
+    width: 900px;
+    z-index: 10;
+    transform: translate(-640px,0);
+    color: #fff;
+}
+.visual .txt h2 {
+    padding: 0 0 23px 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.visual .txt p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.visual .popup {
+    height: 900px;
+}
+.visual .popup .swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual .popup .pop01 {
+    background-image: url(../images/visual_bg01.png);
+}
+.visual .popup .pop02 {
+    background-image: url(../images/visual_bg02.png);
+}
+.visual .popup .pop03 {
+    background-image: url(../images/visual_bg03.png);
+}
+.visual .popup .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+}
+.visual .popup .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+/* visual 끝 */
+
+.product {
+    margin: 159px 0 0 0;
+}
+.product h2 {
+    position: sticky;
+    top: 120px;
+    left: 0;
+    float: left;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.product h2 span {
+    display: block;
+}
+.product .list {
+    margin-left: 400px;
+}
+.product .list ul li {
+    width: 400px;
+    margin: 0 0 100px 0;
+}
+.product .list ul li:nth-child(1),
+.product .list ul li:nth-child(3),
+.product .list ul li:nth-child(5) {
+    float: left;
+}
+.product .list ul li:nth-child(2),
+.product .list ul li:nth-child(4) {
+    float: right;
+}
+.product .list ul li:nth-child(2) {
+    margin-top: 200px;
+}
+.product .list ul li a {
+    display: block;
+}
+.product .list ul li a strong {
+    display: block;
+    margin: 17px 0 14px 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+}
+.product .list ul li a span {
+    display: block;
+    margin: 0 0 11px 0;
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+}
+.product .list ul li a i {
+    font-size: 35px;
+}
+/* product 끝 */
+
+.brand {
+    padding: 0 0 169px 0;
+    margin: 17px 0 0 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.brand h2 {
+    padding: 143px 0 90px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.brand h2 strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+.brand ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    margin: 0 40px 0 0;
+}
+.brand ul li:last-child {
+    margin-right: 0;
+}
+.brand ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 16px;
+    width: 1px;
+    height: 99px;
+    background-color: #ccc;
+    content: "";
+}
+.brand ul li:last-child::after {
+    display: none;
+}
+.brand ul li i {
+    font-size: 30px;
+    color: #666;
+}
+.brand ul li h3 {
+    padding: 16px 0 7px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+/* brand 끝 */ 
+
+.service h2 {
+    display: none;
+}
+.service ul li {
+    float: left;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+.service ul li.how {
+    background-image: url(../images/service01.png);
+}
+.service ul li.store {
+    background-image: url(../images/service02.png);
+}
+.service ul li.color {
+    background-image: url(../images/service03.png);
+}
+.service ul li a {
+    display: block;
+    height: 329px;
+    padding: 59px 0 0 50px;
+}
+.service ul li a span {
+    display: block;
+}
+.service ul li a strong {
+    display: block;
+    margin: 5px 0 18px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.service ul li a i {
+    font-size: 35px;
+}
+/* service 끝 */
+
+aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 10;
+}
+aside button {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 10px 0;
+    border-radius: 25px;
+    background-color: #1d1d1d;
+    color: #fff;
+    line-height: 0.3;
+    text-align: center;
+}
+aside button i {
+    font-size: 20px;
+}
+aside button span {
+    font-size: 13px;
+    font-weight: 700;
+}
+/* aside 끝 */
+
+footer {
+    padding: 0 0 100px 0;
+    background-color: #2d2d2d;
+    color: rgba(255,255,255,0.8);
+}
+footer .inner {
+    position: relative;
+}
+footer .sns {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+footer .sns ul {
+    float: right;
+    margin: 21px 0 0 0;
+}
+footer .sns ul li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+footer .sns ul li:last-child {
+    margin-right: 0;
+}
+footer .sns ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 19px auto;
+    font-size: 0;
+    line-height: 0;
+}
+footer .sns ul li.facebook a {
+    background-image: url(../images/sns_facebook.svg);
+}
+footer .sns ul li.naver a {
+    background-image: url(../images/sns_naver.svg);
+}
+footer .sns ul li.insta a {
+    background-image: url(../images/sns_insta.svg);
+}
+footer .sns ul li.youtube a {
+    background-image: url(../images/sns_youtube.svg);
+}
+footer .flogo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+footer .flogo img {
+    width: 85px;
+    opacity: 0.8;
+}
+footer .finfo {
+    margin: 25px 0;
+}
+footer .finfo span {
+    display: inline-block;
+}
+footer .finfo span.brd {
+    position: relative;
+    margin-right: 33px;
+}
+footer .finfo span.brd::after {
+    position: absolute;
+    right: -21px;
+    top: 5px;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(255,255,255,0.2);
+    content: "";
+}
+/* footer 끝 */
+
+
+}
