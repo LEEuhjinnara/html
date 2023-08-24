@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 패딩 적용시 박스크기가 패딩 크기만큼 늘어나는걸 방지 */
+}
+html, body {
+    font-family: 'Montserrat', 'Noto Sans KR', 'NanumGothic', 'Malgun Gothic', 'Apple SD Gothic', 'Apple SD Gothic Neo', 'Dotum', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    /*letter-spacing: -0.05em;*/
+    color: #3d3d3d;
+    word-break: keep-all; 
+}
+button {
+    background-color: transparent; /* 투명 */
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    /* 서체 상속 - button은 body에서 적용한 서체를 
+       자동으로 상속 받지 않음 - form관련 태그는 다 그럼 */
+    cursor: pointer; /* 마우스 오버 시 손바닥 모양 */
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul, li, ol {
+    list-style: none;
+}
+em, address {
+    font-style: normal;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.clearfix {
+    display: block;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+#wrap {
+    /*overflow: hidden;*/
+    min-width: 1280px;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+}
+header::after {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 312px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    content: "";
+}
+header h1 {
+    float: left;
+    margin: 37px 0 0 0;
+}
+header h1 a {
+    display: block;
+    font-size: 30px;
+}
+header .gnb {
+    position: relative;
+    z-index: 110;
+    float: right;
+    margin: 17px 0 0 0;
+}
+header .gnb ul li {
+    float: left;
+    width: 240px;
+    text-align: center;
+}
+header .gnb ul li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 21px;
+}
+header .gnb ul li:hover a {
+    font-weight: 700;
+}
+header.fixed {
+    position: fixed;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    color: #1d1d1d;
+}
+header.fixed h1 a {
+    color: #1d1d1d;
+}
+header.fixed h1 strong {
+    color: #aaa;
+}
+
+.visual {
+    position: relative;
+}
+.visual .txt {
+    position: absolute;
+    left: 50%;
+    top: 320px;
+    width: 900px;
+    z-index: 10;
+    transform: translate(-640px,0);
+    color: #fff;
+}
+.visual .txt h2 {
+    padding: 0 0 23px 0;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Carter One', cursive;
+}
+.visual .txt p {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.visual .popup {
+    height: 900px;
+}
+.visual .popup .swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual .popup .pop01 {
+    background-image: url(../images/bg1.jpg);
+}
+.visual .popup .pop02 {
+    background-image: url(../images/bg2.jpg);
+}
+.visual .popup .pop03 {
+    background-image: url(../images/bg3.jpg);
+}
+.visual .popup .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+}
+.visual .popup .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.one .class {
+    margin: 154px 0 100px 0;
+}
+.one .class img {
+    float: left;
+    width: 500px;
+    height: 600px;
+}
+.one .class .inner {
+    float: left;
+    margin: 80px 0 0 80px;
+}
+.one .event {
+    margin: 0 100px 146px 0;
+}
+.one .event img {
+    float: right;
+    width: 640px;
+    height: 450px;
+}
+.one .event .inner {
+    float: right;
+    margin: 63px 80px 0 0;
+}
+.one h2 {
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700px;
+}
+.one p {
+    margin: 17px 0 46px 0;
+}
+.one p strong {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.one a {
+    display: inline-block;
+    float: left;
+    padding: 6px 21px;
+    margin: 0 5px 0 0;
+    border: 1px solid #666;
+    box-shadow: 5px 5px 10px #333;
+}
+.one a:hover {
+    background-color: lightpink;
+    color: #fff;
+}
+
+.service h2 {
+    display: none;
+}
+.service ul li {
+    float: left;
+    width: 33.33%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+
+}
+.service ul li.how {
+    background-image: url(../images/how.jpg);
+}
+.service ul li.review {
+    background-image: url(../images/review.jpg);
+}
+.service ul li.product {
+    background-image: url(../images/product.jpg);
+}
+.service ul li a {
+    display: block;
+    height: 330px;
+    padding: 59px 0 0 50px;
+}
+.service ul li a span {
+    display: block;
+    font-size: 20px;
+}
+.service ul li a strong {
+    display: block;
+    margin: 5px 0 18px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+.service ul li a i {
+    font-size: 40px;
+}
+
+aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 10;
+}
+aside button {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 10px 0;
+    border-radius: 25px;
+    background-color: #1d1d1d;
+    color: #fff;
+    line-height: 0.3;
+    text-align: center;
+}
+aside button i {
+    font-size: 20px;
+}
+aside button span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+footer {
+    padding: 0 0 50px 0;
+    background-color: #2d2d2d;
+    color: rgba(255,255,255,0.8);
+}
+footer .inner {
+    position: relative;
+}
+footer .sns {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+footer .sns ul {
+    float: right;
+    margin: 21px 0 0 0;
+}
+footer .sns ul li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+footer .sns ul li:last-child {
+    margin-right: 0;
+}
+footer .sns ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.6);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 19px auto;
+    font-size: 0;
+    line-height: 0;
+}
+footer .sns ul li.facebook a {
+    background-image: url(../images/sns_facebook.svg);
+}
+footer .sns ul li.naver a {
+    background-image: url(../images/sns_naver.svg);
+}
+footer .sns ul li.insta a {
+    background-image: url(../images/sns_insta.svg);
+}
+footer .sns ul li.youtube a {
+    background-image: url(../images/sns_youtube.svg);
+}
+footer .flogo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+footer .finfo {
+    margin: 25px 0;
+}
+footer .finfo .fnav li {
+    float: left;
+}
+footer .finfo .fnav li a {
+    display: block;
+    padding: 0 14px;
+}
+footer .finfo .fnav li.privacy a {
+    padding-left: 0;
+    font-weight: 700;
+}
+footer .finfo .fnav li a:hover {
+    text-decoration: underline;
+}
+footer .info {
+    margin: 19px 0 5px 0;
+}
+footer .info address {
+    display: inline;
+}
+footer .info span {
+    display: inline-block;
+    margin: 0 0 0 24px;
+}
